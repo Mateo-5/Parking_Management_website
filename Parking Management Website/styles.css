@@ -14,7 +14,7 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
-    background-image: url(customer-journey_office.png);
+    background-image: url(images/customer-journey_office.png);
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
@@ -92,7 +92,7 @@ nav {
 main {
     flex: 1%;
     padding: 2rem;
-    background-image: url(Parking\ Management\ System\ 1.png);
+    background-image: url(images/Parking\ Management\ System\ 1.png);
     background-size: cover;
     background-position: center;
     background-color: #fcfcfe;
@@ -107,7 +107,7 @@ footer {
     position: static;
     bottom: 0%;
     width: 100%;
-    background-image: url(footer.jpg);
+    background-image: url(images/footer.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
