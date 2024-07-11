@@ -1,2 +1,2 @@
-# AI-image-organiser
-# First project
+Heyy !!!
+This is my first projet as a newbie
