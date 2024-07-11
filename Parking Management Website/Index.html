@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parking Management</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Welcome to Parking Management System</h1>
+		<nav>
+            <button class="open-button" data-url="index.html">Home</button>
+            <button class="nav-button" data-url="availability.html">Parking Availability</button>
+            <button class="nav-button" data-url="reservation.html">Reservation</button>
+			<button class="nav-button" data-url="profile.html">Profile</button>
+	</header>
+	<main>
+		<div id="div1">
+			<br>
+			<section id="auth-section" class="auth-section">
+				<div id="signup-section">
+					<h2>Sign Up</h2>
+					<form id="signup-form">
+						<label for="signup-name">Name:</label>
+						<input type="text" id="signup-name" name="name" required>
+						<label for="signup-email">Email:</label>
+						<input type="email" id="signup-email" name="email" required>
+						<label for="signup-password">Password:</label>
+						<input type="password" id="signup-password" name="password" required>
+						<button class="nav-button" type="button" id="signup-button">Sign Up</button>
+					</form>
+					<br>
+					<p style="text-align: center;">Already have an account? <a href="Login.html">Log In</a></p>
+				</div>
+				<div id="profile-section" class="profile-section" style="display: none;">
+					<h2>Your Profile</h2>
+					<p id="profile-name"></p>
+					<p id="profile-email"></p>
+					<br>
+					<p style="text-align: center;">To reserve your parking spot - <a href="Reservation.html">Click here</a> </p>
+				</div>
+			</section>
+		</section>
+		</div>
+		<div id="div2">
+			<section class="hero">
+				<h2>Efficient Parking Management at Your Fingertips</h2>
+				<p>Welcome to the ultimate solution for managing your parking spaces effortlessly.</p>
+			<section>
+				<h2>About our system</h2>
+				<p>Manage your parking spaces efficiently and effortlessly.</p>
+			</section>
+			<section>
+				<h2>Key Features</h2>
+				<ul>
+					<li>Real-Time Parking Availability</li>
+					<li>Easy Reservation System</li>
+					<li>Admin Management Tools</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Customer Reviews</h2>
+				<blockquote>"This system has made parking so much easier!" - Jane Doe</blockquote>
+				<blockquote>"A game-changer for our business." - John Smith</blockquote>
+			</section>
+			<section>
+				<h2>Latest News</h2>
+				<article>
+					<h3>New Features Released</h3>
+					<p>We have added new features to improve user experience.</p>
+				</article>
+			</section>
+			<section>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<p>&copy;2024 Parking Management</p>
+	</footer>
+</body>
+</html>

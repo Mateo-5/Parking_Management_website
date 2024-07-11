@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parking Management</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Login</h1>
+        <nav>
+            <button class="nav-button" data-url="index.html">Home</button>
+            <button class="nav-button" data-url="availability.html">Parking Availability</button>
+            <button class="nav-button" data-url="reservation.html">Reservation</button>
+        </nav>
+	</header>
+    <main>
+        <div id="div3">
+            <section class="login">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                    <button class="nav-button" type="button" id="login-button">Login</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Parking Management System</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginButton = document.getElementById('login-button');
+
+            loginButton.addEventListener('click', function() {
+                const email = document.getElementById('login-email').value;
+                const password = document.getElementById('login-password').value;
+
+                let users = JSON.parse(localStorage.getItem('users')) || [];
+
+                const user = users.find(user => user.email === email && user.password === password);
+
+                if (user) {
+                    localStorage.setItem('loggedInUserEmail', email);
+                    alert(`Welcome back, ${user.name}!`);
+                    window.location.href = 'profile.html';
+                } else {
+                    alert('Invalid email or password.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Profile</h1>
+        <nav>
+            <button class="nav-button" data-url="index.html">Home</button>
+            <button class="nav-button" data-url="availability.html">Parking Availability</button>
+            <button class="nav-button" data-url="reservation.html">Reservation</button>
+            <button class="nav-button" data-url="profile.html">Profile</button>
+            <button class="nav-button" onclick="logout()">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section class="profile">
+            <h2 style="text-align: center;">Your Profile</h2>
+            <p style="text-align: center;" id="profile-name"></p>
+            <p style="text-align: center;" id="profile-email"></p>
+        </section>
+        <section>
+            <br><br><br>
+            <p style="text-align: center;">Back to Homepage- <a href="Index.html">Home</a> </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Parking Management System</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+            const email = localStorage.getItem('loggedInUserEmail');
+
+            const user = users.find(user => user.email === email);
+
+            if (user) {
+                document.getElementById('profile-name').innerText = `Name: ${user.name}`;
+                document.getElementById('profile-email').innerText = `Email: ${user.email}`;
+            } else {
+                alert('User not found.');
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
+</body>
+</html>

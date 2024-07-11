@@ -1,0 +1,214 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #2a2729;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    background-image: url(customer-journey_office.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    font-family: inherit;
+}
+
+#div1 {
+  float: right;
+  width: 45%;
+}
+
+#div2 {
+  float: left;
+  width: 55%;
+}
+
+#div3 {
+  margin: 0 auto;
+  width: 33.33%;
+}
+
+#div4 {
+  margin: 0 auto;
+  width: 33.33%;
+}
+
+#div5 {
+  float: left;
+  width: 34%;
+}
+
+#div6{
+  float: right;
+  width: 60%;
+  height: 100%;
+}
+
+.profile-section {
+  float: left;
+  width: 55%;
+  border-radius: 0.75rem;
+  background-color: rgb(194, 194, 195);
+  padding: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.open-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #555;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+main {
+    flex: 1%;
+    padding: 2rem;
+    background-image: url(Parking\ Management\ System\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #fcfcfe;
+    background-blend-mode: lighten;
+}
+
+footer {
+    background-color: #dedede;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: static;
+    bottom: 0%;
+    width: 100%;
+    background-image: url(footer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #afafaf;
+  font-size: 65px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-size: x-large;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6%;
+}
+
+button {
+    font-size: 12px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    background-color: #333;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: #8a8989;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+section {
+    animation: fadein 0.25s ease-in-out;
+    margin-bottom: 20px;
+}
+
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+  margin-top: 10px;
+  outline: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: transparent 0px 0px 0px 1px inset;
+  padding: 0.6em;
+  border-radius: 12px;
+  border: 1px solid #333;
+  color: black;
+}
+
+table {
+  width: 33.33%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}

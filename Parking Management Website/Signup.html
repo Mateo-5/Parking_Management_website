@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+        <nav>
+            <button class="nav-button" data-url="index.html">Home</button>
+            <button class="nav-button" data-url="availability.html">Parking Availability</button>
+            <button class="nav-button" data-url="reservation.html">Reservation</button>
+        </nav>
+    </header>
+    <main>
+        <div id="div4">
+            <section class="Signup">
+                <h2>Create an Account</h2>
+                <form id="signup-form">
+                    <label for="name">Username:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    
+                    <button class="nav-button" type="button" onclick="submitForm()">Sign Up</button>
+                </form>
+            </section>
+            <section>
+                <p>Already have an account? <a href="Login.html">Log In</a></p>
+            </section>
+            <section class="profile" id="profile-section" style="display: none;">
+                <h2>User Profile</h2>
+                <div class="profile-info">
+                    <p><strong>Name:</strong> <span id="profile-name"></span></p>
+                    <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                    <p><strong>Member Since:</strong> <span id="profile-date"></span></p>
+                    <p><strong>Reserved Spots:</strong> <span id="profile-spots">0</span></p>
+                    <p><strong>Account Status:</strong> <span id="profile-status">Active</span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Parking Management</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
