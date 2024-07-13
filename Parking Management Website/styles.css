@@ -95,7 +95,7 @@ main {
     background-image: url(images/Parking\ Management\ System\ 1.png);
     background-size: cover;
     background-position: center;
-    background-color: #fcfcfe;
+    background-color: #f0f0f0;
     background-blend-mode: lighten;
 }
 
@@ -212,3 +212,4 @@ td {
   text-align: left;
   padding: 8px;
 }
+
